@@ -1,75 +1,74 @@
-/******************************************
-/* CSS
-/*******************************************/
-
 /* Box Model Hack */
-*{
+
+* {
   box-sizing: border-box;
 }
-/******************************************
-/* LAYOUT
-/*******************************************/
 
-html{
+/* Layout */
+
+.container {
   background-image: url(../img/shelter-dog.jpeg);
+  width: 100%;
+  height: 100vh;
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
-img{
+img {
   width: 80px;
   border-radius: .2em;
 }
 
-nav{
+nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.orgName{
+.orgName {
   color: wheat;
-  font-size: 22px;
+  font-size: 1.7em;
 }
-ul{
+ul {
   padding: 0;
   margin-left: 1em;
 }
-.spaceBefore{
+.spaceBefore {
   margin-left: .8em;
 }
-nav ul li{
+nav ul li {
   display: inline-block;
 }
-nav ul li a{
+nav ul li a {
   color: wheat;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2em;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   color: red;
   transition: .3s;
 }
-button{
+button {
   border: none;
   border-radius: 30px;
   background: lightslategray;
   padding: 12px 30px;
   columns: white;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1.2em;
   transition: .4s;
   margin: .5em 1em .5em 0;
 }
-nav button:hover{
+nav button:hover {
   background: gray;
   color: white;
   font-weight: bolder;
   transition: 0.3s;
 }
 
-h1{
+h1 {
   color: beige;
   text-align: center;
   font-size: 3em;
@@ -77,7 +76,7 @@ h1{
   margin: 0.2em auto;
 }
 
-body>span{
+.container>span {
   display: flex;
   justify-content: center;
   color: beige;
@@ -86,8 +85,15 @@ body>span{
   font-weight: bold;
   -webkit-text-stroke: 0.5px black;
   margin-bottom: 2em;
+  
 }
-.caption{
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.caption {
   text-align: center;
   font-size: 1.2em;
   font-weight: bold;
@@ -96,23 +102,23 @@ body>span{
   margin-bottom: .5em;
 }
 
-.tableFlex{
+.tableFlex {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-body>section>section{
+body>section>section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
-body>section{
+body>section {
   width: 80%;
   margin: 3.1em auto;
 }
-section section{
+section section {
   border: 1px solid gray;
 }
-section div{
+section div {
   margin: 1em 0;
   display: flex;
   align-items: center;
@@ -122,7 +128,7 @@ section div{
   color: honeydew;
   -webkit-text-stroke: 0.2px black;
 }
-.borderNone{
+.borderNone {
   border-left: none;
 }
 /******************************************/

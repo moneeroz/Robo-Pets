@@ -5,97 +5,114 @@
   list-style: none;
 }
 
-html{
-    background-image: url(../img/shelter-dog.jpeg);
-    background-size: cover;
-    background-position: auto;
-    background-repeat: no-repeat;
-  }
+.container {
+  background-image: url(../img/shelter-dog.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-nav{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .orgName{
-    color: wheat;
-    font-size: 22px;
-    font-weight: 400;
-  }
-  ul{
-    padding: 0;
-    margin-left: 1em;
-  }
-  .spaceBefore{
-    margin-left: .8em;
-  }
-  nav ul li{
-    display: inline-block;
-  }
-  nav ul li a{
-    color: wheat;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  nav ul li a:hover{
-    color: red;
-    transition: .3s;
-  }
-  button{
-    border: none;
-    border-radius: 30px;
-    background: lightslategray;
-    padding: 12px 30px;
-    columns: white;
-    font-weight: bold;
-    font-size: 15px;
-    transition: .4s;
-    margin: .5em 1em .5em 0;
-  }
-  nav button:hover{
-    background: gray;
-    color: white;
-    font-weight: bolder;
-    transition: 0.3s;
-  }
-  body{
+nav {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.orgName {
+  color: wheat;
+  font-size: 1.7em;
+}
+
+ul {
+  padding: 0;
+  margin-left: 1em;
+}
+
+.spaceBefore {
+  margin-left: .8em;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: wheat;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  color: red;
+  transition: .3s;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  background: lightslategray;
+  padding: 12px 30px;
+  columns: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: .4s;
+  margin: .5em 1em .5em 0;
+}
+
+nav button:hover {
+  background: gray;
+  color: white;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+  body {
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-.container{
+
+.form {
   background: linear-gradient( rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
   max-width: 400px;
   width: 100%;
   padding: 25px;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin: auto;
 }
-.container .title{
+
+.form .title {
   font-size: 26px;
   font-weight: 500;
 }
-.container form .userDetails{
+
+.form form .userDetails {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
   margin: 10px 0;
 }
-form .userDetails .inputBox{
+
+form .userDetails .inputBox {
   margin-bottom: 10px;
   width: 100%;
 }
-.userDetails .inputBox .details{
+
+.userDetails .inputBox .details {
   display: block;
   font-weight: 500;
   margin-bottom: 5px;
 }
-.userDetails .inputBox input{
+
+.userDetails .inputBox input {
   height: 45px;
   width: 100%;
   outline: none;
@@ -106,15 +123,18 @@ form .userDetails .inputBox{
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
+
 .userDetails .inputBox input:focus, 
 .userDetails .inputBox input:valid{
   border-color: crimson;
 }
-form .button{
+
+form .button {
   height: 45px;
   margin: 45px 0;
 }
-form .button input{
+
+form .button input {
   color: white;
   height: 100%;
   width: 100%;
@@ -126,12 +146,15 @@ form .button input{
   border-radius: 5px;
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
-form .button input:hover{
+
+form .button input:hover {
    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 
-h1{
+.header {
+  margin-block: 1em;
   color: wheat;
   -webkit-text-stroke: 0.5px lightslategray;
-  margin: 30px 0;
+  text-align: center;
+  margin-block: 2em;
 }
